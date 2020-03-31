@@ -10,4 +10,4 @@
 
 -открыть в браузере http://localhost:8080/travelbot;
 
--Telegram bot userename = travel8_bot, token = 1131780065:AAEEVgfPZ7cb-yog8ezLcw-k-sQbb3nUM1M.
+-Telegram bot username = travel8_bot, token = 1131780065:AAEEVgfPZ7cb-yog8ezLcw-k-sQbb3nUM1M.

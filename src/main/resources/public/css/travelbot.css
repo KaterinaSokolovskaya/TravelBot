@@ -1,0 +1,113 @@
+body {
+    background-size: cover;
+    background: radial-gradient(ellipse farthest-corner at 30px 20px, cornflowerblue, lightsteelblue) center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1{
+    margin-left: 40%;
+}
+
+.form-box {
+    display: table;
+    width: 100%;
+}
+
+.form {
+    border-style: inset;
+    border-width: thin;
+    border-color: darkgray;
+
+    background-color: #c5d4f0;
+    display: table-cell;
+}
+
+.label {
+    margin: 1% 5%;
+    font-size: large;
+}
+
+.input-name {
+    background-color: whitesmoke;
+    width: 90%;
+    margin: 1% 5%;
+    word-break: break-word;
+}
+
+.input-text {
+    background-color: whitesmoke;
+    width: 90%;
+    min-height: 50px;
+    margin: 1% 5%;
+    word-break: break-word;
+}
+
+.update {
+    background-color: #c5d4f0;
+    border-style: inset;
+    border-width: thin;
+    border-color: darkgray;
+}
+
+form h3 {
+    text-align: center;
+}
+form p {
+    text-align: center;
+}
+
+.button{
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    font-size: large;
+    box-shadow: 0 0 5px;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.button:hover {
+    background-color: gainsboro;
+    color: cornflowerblue;
+}
+
+.form form .button {
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.update form .button {
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.city {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-color: #c5d4f0;
+}
+
+.city p{
+    border-style: inset;
+    border-width: thin;
+    border-color: darkgray;
+
+    display: table-cell;
+}
+
+.p-id{
+    display: table-row;
+    width: 10%;
+}
+.p-name{
+    display: table-row;
+    width: 20%;
+}
+.p-info{
+    display: table-row;
+    width: 70%;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelBot</title>
+    <script src="/js/travelbot.js" onload="getAllCities()"></script>
+    <link rel="stylesheet" type="text/css" href="/css/travelbot.css">
+</head>
+<body>
+<h1>TRAVEL BOT</h1>
+
+<div class="form-box">
+    <div class="form">
+    <form onsubmit="saveCity()">
+        <h3>Добавить новую запись</h3>
+        <label for="name" class="label">Название города:</label>
+        <br>
+        <input type="text" id="name" class="input-name">
+        <br>
+        <label for="information" class="label">Информация о городе:</label>
+        <br>
+        <textarea id="information" class="input-text"></textarea>
+        <br>
+        <input type="submit" value="Сохранить" class="button">
+    </form>
+    </div>
+
+    <div class="form">
+    <form onsubmit="updateCity()">
+        <h3>Внести изменения в запись</h3>
+        <label for="id_up" class="label">Номер:</label>
+        <br>
+        <input type="number" id="id_up" class="input-name" onchange="getInfo()">
+        <br>
+        <label for="name_up" class="label">Название города:</label>
+        <br>
+        <input type="text" id="name_up" class="input-name">
+        <br>
+        <label for="information_up" class="label">Информация о городе:</label>
+        <br>
+        <textarea id="information_up" class="input-text"></textarea>
+        <br>
+        <input type="submit" value="Изменить" class="button">
+    </form>
+    </div>
+
+    <div class="form">
+    <form onsubmit="deleteCity()">
+        <h3>Удалить запись</h3>
+        <label for="id_del" class="label">Номер:</label>
+        <br>
+        <input type="number" id="id_del" class="input-name">
+        <br>
+        <input type="submit" value="Удалить" class="button">
+    </form>
+    </div>
+</div>
+
+<div class="update">
+    <form onsubmit="updateList()">
+        <h3>Обновить список</h3>
+        <p>Если после внесения изменений новые данные не отображаются в таблице, нажмите кнопку "Обновить".</p>
+        <input type="submit" value="Обновить" class="button">
+    </form>
+</div>
+
+<div id="cities" class="cities"></div>
+</body>
+</html>
